@@ -8,6 +8,8 @@ GIT_SVN_LC_ALL=${LC_ALL:-$LANG}
 
 . ./lib-git-svn.sh
 
+unset GIT_AUTHOR_DATE GIT_COMMITTER_DATE
+
 case "$GIT_SVN_LC_ALL" in
 *.UTF-8)
 	test_set_prereq UTF8
